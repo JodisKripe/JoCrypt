@@ -2,7 +2,7 @@
 
 Encryption Program.
 
-# Run 'setup.py'
+## Run 'setup.py'
 
 This is a Program meant for Basic encryption and decryption processes.
 
