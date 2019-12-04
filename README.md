@@ -2,6 +2,8 @@
 
 Encryption Program.
 
+###### Run 'setup.py'
+
 This is a Program meant for Basic encryption and decryption processes.
 
 To make the program work, in the "Pass.txt", enter the md5 hashed of your password and enter the password when prompted.
