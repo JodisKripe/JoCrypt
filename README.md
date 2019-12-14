@@ -9,6 +9,7 @@ https://drive.google.com/open?id=1Lau6IMGEGqkjko3ATdIvA9yzb6saLzkD
 Download the folder as a whole and do not segment it.
 
 ### 'Root' is the executable and 'brin' is the setup.
+You can also use the Shortcuts of both and apply icon of choice.
 
 ## Packages
 ### Make sure these packages are installed in your system:
