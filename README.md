@@ -2,6 +2,18 @@
 
 Encryption Program.
 
+## Packages
+### Make sure these packages are installed in your system:
+os
+msvcrt
+subprocess
+ctypes
+PIL
+itertools
+hashlib
+stegano
+math
+
 ## Run 'setup.py'
 
 This is a Program meant for Basic encryption and decryption processes.
