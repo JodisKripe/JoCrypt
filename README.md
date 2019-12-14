@@ -8,6 +8,8 @@ You can download the executable for any Windows System from the following link:
 https://drive.google.com/open?id=1Lau6IMGEGqkjko3ATdIvA9yzb6saLzkD
 Download the folder as a whole and do not segment it.
 
+### 'Root' is the executable and 'brin' is the setup.
+
 ## Packages
 ### Make sure these packages are installed in your system:
 #### os
