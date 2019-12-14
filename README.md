@@ -2,17 +2,23 @@
 
 Encryption Program.
 
+# Executable
+
+You can download the executable for any Windows System from the following link:
+https://drive.google.com/open?id=1Lau6IMGEGqkjko3ATdIvA9yzb6saLzkD
+Download the folder as a whole and do not segment it.
+
 ## Packages
 ### Make sure these packages are installed in your system:
-os
-msvcrt
-subprocess
-ctypes
-PIL
-itertools
-hashlib
-stegano
-math
+#### os
+#### msvcrt
+#### subprocess
+#### ctypes
+#### PIL
+#### itertools
+#### hashlib
+#### stegano
+#### math
 
 ## Run 'setup.py'
 
