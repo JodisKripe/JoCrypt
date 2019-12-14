@@ -408,13 +408,13 @@ def Hash():
 	sha1=hashlib.sha1(s.encode())
 	sha256=hashlib.sha256(s.encode())
 	sha384=hashlib.sha384(s.encode())
-	wl=whirlpool.new(s)
-	wh=wl.hexdigest()
+	sha512=hashlib.sha512(s.encode())
 	ldscr()
 	print("Md5:",md5.hexdigest())
 	print("SHA224:",sha224.hexdigest())
 	print("SHA256:",sha256.hexdigest())
 	print("SHA384:",sha384.hexdigest())
+	print("SHA512:",sha512.hexdigest())
 	lom=input()
 ##############################################################################################################################################################
 
@@ -470,7 +470,7 @@ def SteganographyEncrypt():
 	message=input("Enter the message to be encrypted:")
 	ldscr()
 	f=lsb.hide(file,message)
-	f.save("./Stego/Fresh/"+input("Enter name of new file with extension"))
+	f.save("./Stego/Fresh/"+input("Enter name of new file with extension:"))
 	print("Your file is saved in the folder \'Fresh\'")
 	jj=input()
 
@@ -486,7 +486,7 @@ def SteganographyDecrypt():
 	print("                                                                                                                                                    \n ")
 
 	print("Move the image to\'De\'")
-	file=input("Enter Filename with extension")
+	file=input("Enter Filename with extension:")
 	rev=lsb.reveal("./Stego/De/"+file)
 	ldscr()
 	print("The hidden message is:-\n"+rev)
@@ -507,7 +507,7 @@ def Start():
 			x+=1
 		else:
 			os.system('cls')
-			print("\t\t\t\t\t\tAccess Denied\n\n")
+			print("\t\t\t\t\tAccess Denied\n\n")
 	l=input()
 	pass  #
 ################################################################################################################################################################3
