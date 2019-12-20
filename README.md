@@ -10,6 +10,12 @@ Download the folder as a whole and do not segment it.
 
 ### 'Root' is the executable and 'brin' is the setup.
 You can also use the Shortcuts of both and apply icon of choice.
+# Support for Linux and Android
+Now this framework can be run on Linux and Android.
+All you have to do is clone the whole repository and run only the JoCryptL.py.
+It the legacy edition in which all the windows kernel functions have been removed.
+
+To run it on Android,download Termux and clone the repository in the linux environment.
 
 ## Packages
 ### Make sure these packages are installed in your system:
