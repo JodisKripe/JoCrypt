@@ -2,6 +2,8 @@
 
 Encryption Program.
 
+[![Run on Repl.it](https://repl.it/badge/github/SidJo15/JoCrypt)](https://repl.it/github/SidJo15/JoCrypt)
+
 # Executable
 
 You can download the executable for any Windows System from the following link:
