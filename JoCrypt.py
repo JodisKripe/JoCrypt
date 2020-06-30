@@ -681,16 +681,6 @@ def JoCrypt(UID):
 			os.system('cls')
 		elif(option=="C" or option=="c"):
 			os.system('cls')
-			print("I Thank Mrs.Vandana Sabharwal and Mrs.Monica Dewan,my Computer Sc. Teachers,\nFor giving me this oppurtunity to make a program which has real world applications\nand increase my interest in the subject.\
-				\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-			print("\t\t\t\t\t_________                               __                   _________      .__                             __________               __            ")
-			print("\t\t\t\t\t\\_   ___ \\  ____   _____ ______  __ ___/  |_  ___________   /   _____/ ____ |__| ____   ____   ____  ____   \\______   \\ ____   ____ |  | __  ______")
-			print("\t\t\t\t\t/    \\  \\/ /  _ \\ /     \\\\____ \\|  |  \\   __\\/ __ \\_  __ \\  \\_____  \\_/ ___\\|  |/ __ \\ /    \\_/ ___\\/ __ \\   |       _//  _ \\_/ ___\\|  |/ / /  ___/")
-			print("\t\t\t\t\t\\     \\___(  <_> )  Y Y  \\  |_> >  |  /|  | \\  ___/|  | \\/  /        \\  \\___|  \\  ___/|   |  \\  \\__\\  ___/   |    |   (  <_> )  \\___|    <  \\___ \\ ")
-			print("\t\t\t\t\t \\______  /\\____/|__|_|  /   __/|____/ |__|  \\___  >__|    /_______  /\\___  >__|\\___  >___|  /\\___  >___  >  |____|_  /\\____/ \\___  >__|_ \\/____  >")
-			print("\t\t\t\t\t        \\/             \\/|__|                    \\/                \\/     \\/        \\/     \\/     \\/    \\/          \\/            \\/     \\/     \\/ ")
-
-			print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis Program was made by Siddharth Johri\n                         XII-C\n                         Roll No.-20")	
 			_=input()
 			os.system('cls')
 		elif(option=="R" or option=="r"):
