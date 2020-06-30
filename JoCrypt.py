@@ -510,7 +510,7 @@ def ldscr():
 	os.system('cls')	    
 ################################################################################################################################################################3
 def readMe():
-	print("This program is made by Siddharth Johri and licenced under public domain.")
+	print("This program is made by SidJo and licenced under public domain.")
 	print("These are some Requirements,Information and Suggestions for the use of this program.\n")
 	print("General tip: Try to hide the Key/Shift information(If any) within the message such that it is legible.\n\nAnagram:\n1.Dont Use Spaces.Use the Serial numbers to your advantage.\n2.Dont input a words with more than 9 letters(Otherwise the time to process and the memory required may cause in a crash)\
 		\n\nSubstitution:\n1.Dont use Numbers or symbols\n2.Trying to decrypt a message which has not been Encrypted using the specific key will result in error\
