@@ -2,6 +2,14 @@
 
 Encryption Program.
 
+# MySQL Support
+
+All the records of encryptions will be maintained. MySQL needs to be installed on your system for it obviously.
+For the ease of finding a record, A username is given to you(by yourself) everytime you operate the program.
+All encryptions will be saved under that username and will be timestamped. The message you wanted to encrypt will also be saved for future references.
+
+### If you are unable to run MySQL on your device, You will have to run the JoCrypt_NoDB.py . It is the same as the original file only limitation is no record is maintained and no MySQL is required. 
+
 # Executable
 
 You can download the executable for any Windows System from the following link:
