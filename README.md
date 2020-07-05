@@ -12,9 +12,8 @@ All encryptions will be saved under that username and will be timestamped. The m
 
 # Executable
 
-You can download the executable for any Windows System from the following link:
-https://drive.google.com/open?id=1Lau6IMGEGqkjko3ATdIvA9yzb6saLzkD
-Download the folder as a whole and do not segment it.
+You can Convert any script to an executable using auto-py-to-exe so it can work on a machine with no python.
+Very Handy indeed.
 
 ### 'Root' is the executable and 'brin' is the setup.
 You can also use the Shortcuts of both and apply icon of choice.
