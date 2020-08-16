@@ -2,7 +2,6 @@
 
 Encryption Program.
 
-[![Run on Repl.it](https://repl.it/badge/github/SidJo15/JoCrypt)](https://repl.it/github/SidJo15/JoCrypt)
 
 # MySQL Support
 
@@ -11,6 +10,7 @@ For the ease of finding a record, A username is given to you(by yourself) everyt
 All encryptions will be saved under that username and will be timestamped. The message you wanted to encrypt will also be saved for future references.
 
 ### If you are unable to run MySQL on your device, You will have to run the JoCrypt_NoDB.py . It is the same as the original file only limitation is no record is maintained and no MySQL is required. 
+
 
 # Executable
 
