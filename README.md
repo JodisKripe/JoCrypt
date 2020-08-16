@@ -2,6 +2,8 @@
 
 Encryption Program.
 
+[![Run on Repl.it](https://repl.it/badge/github/SidJo15/JoCrypt)](https://repl.it/github/SidJo15/JoCrypt)
+
 # MySQL Support
 
 All the records of encryptions will be maintained. MySQL needs to be installed on your system for it obviously.
