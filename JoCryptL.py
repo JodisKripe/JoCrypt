@@ -443,7 +443,7 @@ def ldscr():
 	os.system('clear')	    
 ################################################################################################################################################################3
 def readMe():
-	print("This program is made by SidJo and licenced under public domain.")
+	print("This program is made by Siddharth Johri and licenced under public domain.")
 	print("These are some Requirements,Information and Suggestions for the use of this program.\n")
 	print("General tip: Try to hide the Key/Shift information(If any) within the message such that it is legible.\n\nAnagram:\n1.Dont Use Spaces.Use the Serial numbers to your advantage.\n2.Dont input a words with more than 9 letters(Otherwise the time to process and the memory required may cause in a crash)\
 		\n\nSubstitution:\n1.Dont use Numbers or symbols\n2.Trying to decrypt a message which has not been Encrypted using the specific key will result in error\
@@ -558,7 +558,7 @@ def JoCrypt():
 		print("	| |\\/| |/ _` | | '_ \\  | |\\/| |/ _ \\ '_ \\| | | |")
 		print("	| |  | | (_| | | | | | | |  | |  __/ | | | |_| |")
 		print("	\\_|  |_/\\__,_|_|_| |_| \\_|  |_/\\___|_| |_|\\__,_|") #ASCII art to be finallised
-		print("\n\nHello, this is SidJo. I will help you encode and encrypt")
+		print("\n\nHello, this is Jodis. I will help you encode and encrypt")
 		print("Choose the cipher with which you want to encrypt/decrypt a message")
 		print("	\n1.Anagram\n2.Substitution\n3.ReverseString\n4.ReverseSubstitution\n5.RailFence(Encryption)\n6.RailFence(Decryption)\n7.CaesarEncrypt\n8.CaesarDecrypt\n9.Hash\n10.SteganographyEncrypt\n11.SteganographyDecrypt\n12.CaesarBoxEncrypt\n13.CaesarBoxDecrypt\nR for ReadMe and Instructions\nC for Credits\nQ to exit")				
 		option=str(input("\n\n~$-"))  
