@@ -19,8 +19,7 @@ All encryptions will be saved under that username and will be timestamped. The m
 You can Convert any script to an executable using auto-py-to-exe so it can work on a machine with no python.
 Very Handy indeed.
 
-### 'Root' is the executable and 'brin' is the setup.
-You can also use the Shortcuts of both and apply icon of choice.
+
 # Support for Linux and Android
 Now this framework can be run on Linux and Android.
 All you have to do is clone the whole repository and run only the JoCryptL.py.
