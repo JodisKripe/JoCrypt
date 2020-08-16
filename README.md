@@ -1,9 +1,7 @@
-# JoCrypt
+# [JoCrypt](http://jocrypt.sidjo.repl.run)
+### Click to Try/Run it on Repl
 
 Encryption Program.
-
-# [jocrypt.sidjo.repl.run](http://jocrypt.sidjo.repl.run)
-## Run it on Repl
 
 # MySQL Support
 
@@ -16,7 +14,7 @@ All encryptions will be saved under that username and will be timestamped. The m
 
 # Executable
 
-You can Convert any script to an executable using auto-py-to-exe so it can work on a machine with no python.
+You can Convert any script to an executable using py2exe so it can work on a machine with no python.
 Very Handy indeed.
 
 
