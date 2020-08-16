@@ -2,7 +2,7 @@
 
 Encryption Program.
 
-# www.jocrypt.sidjo.repl.run
+# [JoCrypt on Repl](jocrypt.sidjo.repl.run)
 ## Run it on Repl
 
 # MySQL Support
