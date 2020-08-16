@@ -628,7 +628,7 @@ def JoCrypt(UID):
 		print("	| |\\/| |/ _` | | '_ \\  | |\\/| |/ _ \\ '_ \\| | | |")
 		print("	| |  | | (_| | | | | | | |  | |  __/ | | | |_| |")
 		print("	\\_|  |_/\\__,_|_|_| |_| \\_|  |_/\\___|_| |_|\\__,_|") #ASCII art to be finallised
-		print("\n\nHello, this is SidJo. I will help you encode and encrypt")
+		print("\n\nHello, this is JodisKripe. I will help you encode and encrypt")
 		print("Choose the cipher with which you want to encrypt/decrypt a message")
 		print("	\n1.Anagram\n2.Substitution\n3.ReverseString\n4.ReverseSubstitution\n5.RailFence(Encryption)\n6.RailFence(Decryption)\n7.CaesarEncrypt\n8.CaesarDecrypt\n9.Hash\n10.SteganographyEncrypt\n11.SteganographyDecrypt\n12.CaesarBoxEncrypt\n13.CaesarBoxDecrypt\n14.Angie\nL for Logs\nR for ReadMe and Instructions\nC for Credits\nQ to exit")				
 		option=str(input("\n\n~$-"))  
