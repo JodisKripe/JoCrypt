@@ -8,10 +8,6 @@ import itertools
 import hashlib
 from stegano import lsb
 import math
-import login
-import Database
-from datetime import datetime
-
 
 kernel32 = ctypes.WinDLL('kernel32', use_last_error=True)
 user32 = ctypes.WinDLL('user32', use_last_error=True)
@@ -86,8 +82,8 @@ def BoxCipher():
 
 	for i in range(0, c):
 		print(message[i : l : r], end = " ")
-	now=datetime.now()
-	Database.AddRecord(UID,"BoxCipher",message,now.strftime("%d/%m/%Y %H:%M:%S"))
+
+
 
 	bye=input()
 
@@ -131,8 +127,6 @@ def BoxCipherDecryption():
 		last+=message[i][-1]
 	ldscr()
 	print("The encrypted message is:\n"+str(jj+last))
-	now=datetime.now()
-	Database.AddRecord(UID,"BoxCipherD",message,now.strftime("%d/%m/%Y %H:%M:%S"))
 	dec=input()
 
 
@@ -165,8 +159,6 @@ def Substitution():
 	ldscr()  
 	os.system('cls')
 	print ( encryption)
-	now=datetime.now()
-	Database.AddRecord(UID,"Substitution",mess,now.strftime("%d/%m/%Y %H:%M:%S"))
 	ayat=input()
 
 #####################################################################################################################################################################
@@ -189,8 +181,6 @@ def ReverseString():
 	ldscr()  
 	os.system('cls')
 	print ( encryption )    
-	now=datetime.now()
-	Database.AddRecord(UID,"ReverseString",message,now.strftime("%d/%m/%Y %H:%M:%S"))
 	iyt=input()
 ##################################################################################################################################################################
 def CaesarDecrypt():
@@ -218,8 +208,6 @@ def CaesarDecrypt():
 			cipher = cipher + chr((ord(char) - s - 97) % 26 + 97)
 	ldscr()
 	print(cipher)
-	now=datetime.now()
-	Database.AddRecord(UID,"CaesarD",text,now.strftime("%d/%m/%Y %H:%M:%S"))
 	pewds=input()
  
 
@@ -245,8 +233,6 @@ def CaesarEncrypt():
 	ldscr()
 
 	print(cipher)
-	now=datetime.now()
-	Database.AddRecord(UID,"CaesarE",string,now.strftime("%d/%m/%Y %H:%M:%S"))
 	cip=input()
 
 
@@ -291,8 +277,6 @@ def encryptRailFence():
 				result.append(rail[i][j]) 
 	ldscr()
 	print("" . join(result)) 
-	now=datetime.now()
-	Database.AddRecord(UID,"RailFenceE",text,now.strftime("%d/%m/%Y %H:%M:%S"))
 	cham=input()      
  
 ##################################################################################################################################################################
@@ -363,8 +347,6 @@ def decryptRailFence():
 			row -= 1
 	ldscr()
 	print("".join(result))
-	now=datetime.now()
-	Database.AddRecord(UID,"RailFenceD",cipher,now.strftime("%d/%m/%Y %H:%M:%S"))
 	lamas=input() 
 ##################################################################################################################################################################
 def ReverseSubstitution():
@@ -379,8 +361,6 @@ def ReverseSubstitution():
 			mess = mess+ replace[jj[_]]
 		ldscr()
 		print (mess)
-		now=datetime.now()
-		Database.AddRecord(UID,"SubstitutionR",encry,now.strftime("%d/%m/%Y %H:%M:%S"))
 		iyat=input()
 ################################################################################################################################################################3
 def Anagram():
@@ -402,57 +382,10 @@ def Anagram():
 			f.write("\n")
 		else:
 			f.write(str(i)+"."+perms[i])
-			f.write("\n")				
+			f.write("\n")
+				
 	f.close()
-	now=datetime.now()
-	Database.AddRecord(UID,"Anagram",message,now.strftime("%d/%m/%Y %H:%M:%S"))
 	fam=input("All anagrams have been saved in a file in \'AnaGrams\'")
-################################################################################################################################################################3
-def Angie():
-	#ASCII
-	print("    :::     ::::    :::  :::::::: ::::::::::: :::::::::: ")
-	print("  :+: :+:   :+:+:   :+: :+:    :+:    :+:     :+:        ")
-	print(" +:+   +:+  :+:+:+  +:+ +:+           +:+     +:+        ")
-	print("+#++:++#++: +#+ +:+ +#+ :#:           +#+     +#++:++#   ")
-	print("+#+     +#+ +#+  +#+#+# +#+   +#+#    +#+     +#+        ")
-	print("#+#     #+# #+#   #+#+# #+#    #+#    #+#     #+#        ")
-	print("###     ### ###    ####  ######## ########### ########## ")
-	print("")
-	#ART
-	import random
-	op=input("This Function will create a Decoy for you to place among your sensitive data(like passwords)\nHowever, It can be also used as an actual password generator\nA random hex will be generated.\nEnter the parameters carefully.\n1)Totally random lenght and boundaries\n2)Set Lenght\n3)Set boundaries\n4)Set Lenght and Boundaries\n~$-")
-	if (op=="1"):
-		l=random.randint(4,64)
-		angie=''
-		for i in range(l):
-			angie+=chr(random.randint(32,126))
-	elif(op=="2"):
-		l=int(input("Lenght:"))
-		angie=''
-		for i in range(l):
-			angie+=chr(random.randint(32,126))
-	elif(op=="3"):
-		l=random.randint(4,64)
-		b1=int(input("Enter Start of ASCII set:"))
-		b2=int(input("Enter end of ASCII set:"))
-		angie=''
-		for i in range(l):
-			angie+=chr(random.randint(b1,b2))
-	elif(op=="4"):
-		l=int(input("Lenght:"))
-		b1=int(input("Enter Start of ASCII set:"))
-		b2=int(input("Enter end of ASCII set:"))
-		angie=''
-		for i in range(l):
-			angie+=chr(random.randint(b1,b2))
-
-	ldscr()
-
-	print("The Decoy is:",angie)
-	now=datetime.now()
-	Database.AddRecord(UID,"Angie","Generated As per Requirements of user",now.strftime("%d/%m/%Y %H:%M:%S"))
-	lot=input()
-
 ################################################################################################################################################################3
 def Hash():
 
@@ -482,13 +415,10 @@ def Hash():
 	print("SHA256:",sha256.hexdigest())
 	print("SHA384:",sha384.hexdigest())
 	print("SHA512:",sha512.hexdigest())
-	now=datetime.now()
-	Database.AddRecord(UID,"Hash",s,now.strftime("%d/%m/%Y %H:%M:%S"))
 	lom=input()
 ##############################################################################################################################################################
 
 def ldscr():
-	'''
 	import time
 	import os
 	dods=0
@@ -506,7 +436,6 @@ def ldscr():
 			time.sleep(0.001)
 			b=b-2
 		dods+=1
-		'''
 	os.system('cls')	    
 ################################################################################################################################################################3
 def readMe():
@@ -541,10 +470,8 @@ def SteganographyEncrypt():
 	message=input("Enter the message to be encrypted:")
 	ldscr()
 	f=lsb.hide(file,message)
-	now=datetime.now()
-	Database.AddRecord(UID,"Steganography",message,now.strftime("%d/%m/%Y %H:%M:%S"))
 	f.save("./Stego/Fresh/"+input("Enter name of new file with extension:"))
-	print("Your file is saved in the folder \'Fresh\' inside of \'Stego\'")
+	print("Your file is saved in the folder \'Fresh\'")
 	jj=input()
 
 	pass
@@ -580,12 +507,12 @@ def Start():
 			x+=1
 		else:
 			os.system('cls')
-			print("\t\t\t\t\t\tAccess Denied\n\n")
+			print("\t\t\t\t\tAccess Denied\n\n")
 	l=input()
 	pass  #
 ################################################################################################################################################################3
 
-def JoCrypt(UID):
+def JoCrypt():
 	maximize_console()
 	import sys
 	import os
@@ -614,10 +541,7 @@ def JoCrypt(UID):
 	print("                                                                                    y:::::y               p:::::::p                                  ")
 	print("                                                                                   yyyyyyy                p:::::::p                                  ")
 	print("                                                                                                          ppppppppp   ")
-	print("\n\nPress Enter to proceed to main menu\n\n")
-	now=datetime.now()
-	print(now.strftime("%d/%m/%Y %H:%M:%S"))
-
+	print("\n\nPress Enter to proceed to main menu")
 	__________=input()	
 	os.system('cls')
 	x=0
@@ -628,9 +552,9 @@ def JoCrypt(UID):
 		print("	| |\\/| |/ _` | | '_ \\  | |\\/| |/ _ \\ '_ \\| | | |")
 		print("	| |  | | (_| | | | | | | |  | |  __/ | | | |_| |")
 		print("	\\_|  |_/\\__,_|_|_| |_| \\_|  |_/\\___|_| |_|\\__,_|") #ASCII art to be finallised
-		print("\n\nHello, this is JodisKripe. I will help you encode and encrypt")
+		print("\n\nHello, this is Jodis. I will help you encode and encrypt")
 		print("Choose the cipher with which you want to encrypt/decrypt a message")
-		print("	\n1.Anagram\n2.Substitution\n3.ReverseString\n4.ReverseSubstitution\n5.RailFence(Encryption)\n6.RailFence(Decryption)\n7.CaesarEncrypt\n8.CaesarDecrypt\n9.Hash\n10.SteganographyEncrypt\n11.SteganographyDecrypt\n12.CaesarBoxEncrypt\n13.CaesarBoxDecrypt\n14.Angie\nL for Logs\nR for ReadMe and Instructions\nC for Credits\nQ to exit")				
+		print("	\n1.Anagram\n2.Substitution\n3.ReverseString\n4.ReverseSubstitution\n5.RailFence(Encryption)\n6.RailFence(Decryption)\n7.CaesarEncrypt\n8.CaesarDecrypt\n9.Hash\n10.SteganographyEncrypt\n11.SteganographyDecrypt\n12.CaesarBoxEncrypt\n13.CaesarBoxDecrypt\nR for ReadMe and Instructions\nC for Credits\nQ to exit")				
 		option=str(input("\n\n~$-"))  
 		os.system('cls')
 		if(option=="1"):
@@ -676,15 +600,8 @@ def JoCrypt(UID):
 		elif(option=="13"):
 			BoxCipherDecryption()
 			os.system('cls')
-		elif(option=='14'):
-			Angie()
-			os.system('cls')
-		elif(option=="L" or option=="l"):
-			os.system("cls")
-			Database.Read()
-			os.system("cls")
 		elif(option=="C" or option=="c"):
-			os.system('cls')
+			os.system('cls')	
 			_=input()
 			os.system('cls')
 		elif(option=="R" or option=="r"):
@@ -700,9 +617,4 @@ def JoCrypt(UID):
 
 #########################################################################################################################################################################
 Start()
-UID=login.login()
-#now=datetime.now()
-#rnow = now.strftime("%d/%m/%Y %H:%M:%S")
-Database.MakeDBandTbl()
-from Database import username,pswd
-JoCrypt(UID)
+JoCrypt()

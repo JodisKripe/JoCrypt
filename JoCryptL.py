@@ -558,7 +558,7 @@ def JoCrypt():
 		print("	| |\\/| |/ _` | | '_ \\  | |\\/| |/ _ \\ '_ \\| | | |")
 		print("	| |  | | (_| | | | | | | |  | |  __/ | | | |_| |")
 		print("	\\_|  |_/\\__,_|_|_| |_| \\_|  |_/\\___|_| |_|\\__,_|") #ASCII art to be finallised
-		print("\n\nHello, this is SidJo. I will help you encode and encrypt")
+		print("\n\nHello, this is Jodis. I will help you encode and encrypt")
 		print("Choose the cipher with which you want to encrypt/decrypt a message")
 		print("	\n1.Anagram\n2.Substitution\n3.ReverseString\n4.ReverseSubstitution\n5.RailFence(Encryption)\n6.RailFence(Decryption)\n7.CaesarEncrypt\n8.CaesarDecrypt\n9.Hash\n10.SteganographyEncrypt\n11.SteganographyDecrypt\n12.CaesarBoxEncrypt\n13.CaesarBoxDecrypt\nR for ReadMe and Instructions\nC for Credits\nQ to exit")				
 		option=str(input("\n\n~$-"))  
@@ -607,17 +607,7 @@ def JoCrypt():
 			BoxCipherDecryption()
 			os.system('clear')
 		elif(option=="C" or option=="c"):
-			os.system('clear')
-			print("I Thank Mrs.Vandana Sabharwal,my Computer Sc. Teacher,\nFor giving me this oppurtunity to make a program which has real world applications\nand increase my interest in the subject.\
-				\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-			print("\t\t\t\t\t_________                               __                   _________      .__                             __________               __            ")
-			print("\t\t\t\t\t\\_   ___ \\  ____   _____ ______  __ ___/  |_  ___________   /   _____/ ____ |__| ____   ____   ____  ____   \\______   \\ ____   ____ |  | __  ______")
-			print("\t\t\t\t\t/    \\  \\/ /  _ \\ /     \\\\____ \\|  |  \\   __\\/ __ \\_  __ \\  \\_____  \\_/ ___\\|  |/ __ \\ /    \\_/ ___\\/ __ \\   |       _//  _ \\_/ ___\\|  |/ / /  ___/")
-			print("\t\t\t\t\t\\     \\___(  <_> )  Y Y  \\  |_> >  |  /|  | \\  ___/|  | \\/  /        \\  \\___|  \\  ___/|   |  \\  \\__\\  ___/   |    |   (  <_> )  \\___|    <  \\___ \\ ")
-			print("\t\t\t\t\t \\______  /\\____/|__|_|  /   __/|____/ |__|  \\___  >__|    /_______  /\\___  >__|\\___  >___|  /\\___  >___  >  |____|_  /\\____/ \\___  >__|_ \\/____  >")
-			print("\t\t\t\t\t        \\/             \\/|__|                    \\/                \\/     \\/        \\/     \\/     \\/    \\/          \\/            \\/     \\/     \\/ ")
-
-			print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis Program was made by Siddharth Johri\n                         XI-C\n                         Roll No.-20")	
+			os.system('clear')	
 			_=input()
 			os.system('clear')
 		elif(option=="R" or option=="r"):
