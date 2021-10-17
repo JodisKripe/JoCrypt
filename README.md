@@ -8,6 +8,7 @@ Encryption Program.
 All the records of encryptions will be maintained. MySQL needs to be installed on your system for it obviously.
 For the ease of finding a record, A username is given to you(by yourself) everytime you operate the program.
 All encryptions will be saved under that username and will be timestamped. The message you wanted to encrypt will also be saved for future references.
+This support can be avoided by using the JoCrypt_NODB.py script which basically performs the same functions but without the MySQL elements.
 
 ### If you are unable to run MySQL on your device, You will have to run the JoCrypt_NoDB.py . It is the same as the original file only limitation is no record is maintained and no MySQL is required. 
 
@@ -15,7 +16,7 @@ All encryptions will be saved under that username and will be timestamped. The m
 # Executable
 
 You can Convert any script to an executable using py2exe so it can work on a machine with no python.
-Very Handy indeed.
+Very Handy indeed. Updated py2exe.py script to make this process more streamlined.
 
 
 # Support for Linux and Android
