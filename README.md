@@ -24,6 +24,7 @@ All you have to do is clone the whole repository and run only the JoCryptL.py.
 It the legacy edition in which all the windows kernel functions have been removed.
 
 To run it on Android,download Termux and clone the repository in the linux environment.
+Running this project on Android is not recommended due to horrible/no support for ascii art.
 
 ## Packages
 ### Make sure these packages are installed in your system:
@@ -45,7 +46,7 @@ It will only work on windows machines...
 
 If you want it to work on macintosh/Linux etc., remove the "maximize console" part. (Done in JoCryptL.py)
 
-To make the program work, in the "Pass.txt", enter the md5 hashed of your password and enter the password when prompted.
+To make the program work, in the "Pass.txt", enter the md5 hashed of your password and enter the password when prompted. Default --> "SecurePassword@!"
 
 Create files as per the instructions in the program before execution of segments or run setup.py
 
