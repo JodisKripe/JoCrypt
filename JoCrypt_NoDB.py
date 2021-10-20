@@ -8,6 +8,7 @@ import itertools
 import hashlib
 from stegano import lsb
 import math
+import Database
 
 kernel32 = ctypes.WinDLL('kernel32', use_last_error=True)
 user32 = ctypes.WinDLL('user32', use_last_error=True)
@@ -600,6 +601,10 @@ def JoCrypt():
 		elif(option=="13"):
 			BoxCipherDecryption()
 			os.system('cls')
+		elif(option=="L" or option=="l"):
+			os.system("cls")
+			Database.Read()
+			os.system("cls")
 		elif(option=="C" or option=="c"):
 			os.system('cls')	
 			_=input()

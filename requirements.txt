@@ -1,9 +1,4 @@
-os
-msvcrt
-subprocess
-ctypes
-PIL
-itertools
+Pillow
+more-itertools
 hashlib
 stegano
-math
