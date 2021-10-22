@@ -622,12 +622,13 @@ def JoCrypt(UID):
 	os.system('cls')
 	x=0
 	while(x==0):
-		print("        ___  ___      _        ___  ___                 ")
-		print("	|  \\/  |     (_)       |  \\/  |                 ")
-		print("	| .  . | __ _ _ _ __   | .  . | ___ _ __  _   _ ")
-		print("	| |\\/| |/ _` | | '_ \\  | |\\/| |/ _ \\ '_ \\| | | |")
-		print("	| |  | | (_| | | | | | | |  | |  __/ | | | |_| |")
-		print("	\\_|  |_/\\__,_|_|_| |_| \\_|  |_/\\___|_| |_|\\__,_|") #ASCII art to be finallised
+		print(" ___ ___   ____  ____  ____       ___ ___    ___  ____   __ __ ")
+		print("|   |   | /    ||    ||    \     |   |   |  /  _]|    \ |  |  |")
+		print("| _   _ ||  o  | |  | |  _  |    | _   _ | /  [_ |  _  ||  |  |")
+		print("|  \_/  ||     | |  | |  |  |    |  \_/  ||    _]|  |  ||  |  |")
+		print("|   |   ||  _  | |  | |  |  |    |   |   ||   [_ |  |  ||  :  |")
+		print("|   |   ||  |  | |  | |  |  |    |   |   ||     ||  |  ||     |")
+		print("|___|___||__|__||____||__|__|    |___|___||_____||__|__| \__,_|") #ASCII art to be finallised
 		print("\n\nHello, this is JodisKripe. I will help you encode and encrypt")
 		print("Choose the cipher with which you want to encrypt/decrypt a message")
 		print("	\n1.Anagram\n2.Substitution\n3.ReverseString\n4.ReverseSubstitution\n5.RailFence(Encryption)\n6.RailFence(Decryption)\n7.CaesarEncrypt\n8.CaesarDecrypt\n9.Hash\n10.SteganographyEncrypt\n11.SteganographyDecrypt\n12.CaesarBoxEncrypt\n13.CaesarBoxDecrypt\n14.Angie\nL for Logs\nR for ReadMe and Instructions\nC for Credits\nQ to exit")				
