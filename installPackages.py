@@ -3,25 +3,17 @@ import os
 import subprocess
 
 packagesToInstall = ['ctypes','PIL','itertools','hashlib','stegano']
+
+print("\tUpdating pip...")
 subprocess.check_call([sys.executable, '-m', 'pip', 'install','-U', 'pip'])
 
+print("\n \tInstalling packages...\n")
 for i in packagesToInstall:
-	os.system("pip install %s" %(i))
-	try: 
-		reqs = subprocess.check_output([sys.executable, '-m', 'pip','freeze'])
-		installed_packages = [r.decode().split('==')[0] for r in reqs.split()]
-		if(i in installed_packages):
-			print("Installed ", i)
-			os.system("pause")
-	except subprocess.CalledProcessError as e:
-		raise RuntimeError("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
+	subprocess.run([sys.executable, '-m', 'pip', 'install', i])
+	print("\nInstalled ", i, "\n")
 
+os.system("echo.")
+print("Installed packages:\n")
+subprocess.run([sys.executable, '-m', 'pip', 'freeze'])
+os.system("echo.")
 os.system("pause")
-
-'''
-for i in packagesToInstall:
-	subprocess.check_call([sys.executable, '-m', 'pip', 'install', i])
-	reqs = subprocess.check_output([sys.executable, '-m', 'pip','freeze'])
-	installed_packages = [r.decode().split('==')[0] for r in reqs.split()]
-
-'''
