@@ -2,7 +2,7 @@ import sys
 import os
 import subprocess
 
-packagesToInstall = ['ctypes','PIL','itertools','hashlib','stegano']
+packagesToInstall = ['ctypes','PIL','itertools','hashlib','stegano','pandas','mysql','mysql.connector']
 
 print("Updating pip...")
 subprocess.check_call([sys.executable, '-m', 'pip', 'install','-U', 'pip'])
