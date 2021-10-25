@@ -5,7 +5,7 @@ Encryption Program.
 
 ![intro](intro.png)
 
-![menu](menu.jpg)
+![menu](menu.JPG)
 
 # MySQL Support
 
