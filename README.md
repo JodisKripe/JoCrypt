@@ -1,4 +1,4 @@
-# [JoCrypt](http://jocrypt.sidjo.repl.run)
+# [JoCrypt](https://replit.com/@SidJo/JoCrypt?v=1)
 ### Click to Try/Run it on Repl
 
 Encryption Program.
