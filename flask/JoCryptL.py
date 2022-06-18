@@ -92,7 +92,7 @@ def BoxCipher():
 	bye=input()
 
 ##################################################################################################################################################################
-def BoxCipherDecryption():
+def BoxCipherDecryption(text):
 	print("______           _____ _       _               ")
 	print("| ___ \\         /  __ (_)     | |              ")
 	print("| |_/ / _____  _| /  \\/_ _ __ | |__   ___ _ __ ")
@@ -102,7 +102,7 @@ def BoxCipherDecryption():
 	print("                        | |                    ")
 	print("                        |_|  \n\n")
 
-	message=input("Please enter message to be Decrypted:")
+	message=text #input("Please enter message to be Decrypted:")
 	message=message.split(" ")
 	tex=''
 	for i in range(len(message)):
@@ -130,8 +130,8 @@ def BoxCipherDecryption():
 	for i in range(l%r):
 		last+=message[i][-1]
 	ldscr()
-	print("The encrypted message is:\n"+str(jj+last))
-	dec=input()
+	#print("The encrypted message is:\n"+str(jj+last))
+	return str(jj+last)
 
 
 ##################################################################################################################################################################
@@ -165,14 +165,14 @@ def Substitution(text):
 
 #####################################################################################################################################################################
 
-def ReverseString():
+def ReverseString(text):
 	print("    ____                               _____ __       _            ")
 	print("   / __ \\___ _   _____  _____________ / ___// /______(_)___  ____ _")
 	print("  / /_/ / _ \\ | / / _ \\/ ___/ ___/ _ \\__ \\/ __/ ___/ / __ \\/ __ `/")
 	print(" / _, _/  __/ |/ /  __/ /  (__  )  __/__/ / /_/ /  / / / / / /_/ / ")
 	print("/_/ |_|\\___/|___/\\___/_/  /____/\\___/____/\\__/_/  /_/_/ /_/\\__, /  ")
 	print("                                                          /____/ \n\n")	
-	message=input("This Cipher does exactly what it says\n\n~$-")
+	message= text #input("This Cipher does exactly what it says\n\n~$-")
 	arr=list(message)
 
 	encryption=''
@@ -181,9 +181,7 @@ def ReverseString():
 		encryption = encryption + str(arr[-i])
 
 	ldscr()  
-	os.system('clear')
-	print ( encryption )    
-	iyt=input()
+	return encryption
 ##################################################################################################################################################################
 def CaesarDecrypt(text,key):
 	print(" .d8888b.                                                        888                                             888   ") 
@@ -373,7 +371,7 @@ def ReverseSubstitution(text):
 		return mess
 		#iyat=input()
 ################################################################################################################################################################3
-def Anagram():
+def Anagram(text):
 	print("   ###    ##    ##    ###     ######   ########     ###    ##     ## ")
 	print("  ## ##   ###   ##   ## ##   ##    ##  ##     ##   ## ##   ###   ### ")
 	print(" ##   ##  ####  ##  ##   ##  ##        ##     ##  ##   ##  #### #### ")
@@ -381,7 +379,7 @@ def Anagram():
 	print("######### ##  #### ######### ##    ##  ##   ##   ######### ##     ## ")
 	print("##     ## ##   ### ##     ## ##    ##  ##    ##  ##     ## ##     ## ")
 	print("##     ## ##    ## ##     ##  ######   ##     ## ##     ## ##     ## ")
-	message=input("This will print all possible arrangements(permutations) of the word\nP.S. Heavy RAM user and May crash if lenght of word more than 9 letters.\n\nEnter word:")
+	message=text #input("This will print all possible arrangements(permutations) of the word\nP.S. Heavy RAM user and May crash if lenght of word more than 9 letters.\n\nEnter word:")
 	l=message.split(" ")
 	perms = sorted(set(["".join(perm) for perm in itertools.permutations(message)]))
 	n="./AnaGrams/"+message+".txt"

@@ -52,7 +52,18 @@ def CaesarDecrypt():
     text=request.form['text']
     key=int(request.form['key'])
     return JoCryptL.CaesarDecrypt(text,key)    
+
+@app.route("/rev",methods=['POST','GET'])
+def ReverseString():
+  if(request.method=='POST'):
+    text=request.form['text']
+    return JoCryptL.ReverseString(text)
   
+@app.route("/boxdecry",methods=['POST','GET'])
+def BoxCipherDecryption():
+  if(request.method=='POST'):
+    text=request.form['text']
+    return JoCryptL.BoxCipherDecryption(text)
 
 if __name__ == "__main__":
-  app.run()
+  app.run(port=5000)
