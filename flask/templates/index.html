@@ -1,0 +1,97 @@
+<html>
+    <title>
+        JoCrypt
+    </title>
+    <style>
+        .dropbtn {
+          background-color: #3498DB;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: #2980B9;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown a:hover {background-color: #ddd;}
+        
+        .show {display: block;}
+        </style>
+    <body bgcolor="black">
+        <div style="position:relative; padding:5px;top:50px; left:38%; width:390px; height:250px; background-color:white">
+        <div style="text-align:center">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Method</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#home">Home</a>
+                  <a href="#about">About</a>
+                  <a href="#contact">Contact</a>
+                </div>
+              </div>
+    </body>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+        
+</html>
+
+<!--1.Anagram
+    2.Substitution
+    3.ReverseString
+    4.ReverseSubstitution
+    5.RailFence(Encryption)
+    6.RailFence(Decryption)
+    7.CaesarEncrypt
+    8.CaesarDecrypt
+    9.Hash
+    10.SteganographyEncrypt
+    11.SteganographyDecrypt
+    12.CaesarBoxEncrypt
+    13.CaesarBoxDecrypt
+    R for ReadMe and Instructions
+    C for Credits
+    Q to exit-->
+
