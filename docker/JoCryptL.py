@@ -45,9 +45,9 @@ def maximize_console(lines=None):
         user32.ShowWindow(hWnd, SW_MAXIMIZE)
 '''
 ##############################################################################################################################################################
-def BoxCipher(text):
+def BoxCipher():
 	import math
-	message = text # input("~$-").strip()
+	message = input("~$-").strip()
 	message = message.replace(" ", "")
 	l = len(message)
 	sl = math.sqrt(l)
@@ -118,7 +118,6 @@ def BoxCipherDecryption(text):
 ##################################################################################################################################################################
 
 def Substitution(text):
-	#mess=str(input("Enter the message to be substituted by a Set Key\n~$-"))
 	mess=text
 	mess=mess.lower()
 
@@ -187,7 +186,7 @@ def CaesarEncrypt(text,key):
 
 
 ##################################################################################################################################################################
-def encryptRailFence(text,key): 
+def encryptRailFence(text,key):                                                                              
 	#text=input("Input Text to be encrypted:")
 	#key=int(input("Enter Key:"))
 	#text=text
@@ -303,6 +302,13 @@ def ReverseSubstitution(text):
 		#iyat=input()
 ################################################################################################################################################################3
 def Anagram(text):
+	print("   ###    ##    ##    ###     ######   ########     ###    ##     ## ")
+	print("  ## ##   ###   ##   ## ##   ##    ##  ##     ##   ## ##   ###   ### ")
+	print(" ##   ##  ####  ##  ##   ##  ##        ##     ##  ##   ##  #### #### ")
+	print("##     ## ## ## ## ##     ## ##   #### ########  ##     ## ## ### ## ")
+	print("######### ##  #### ######### ##    ##  ##   ##   ######### ##     ## ")
+	print("##     ## ##   ### ##     ## ##    ##  ##    ##  ##     ## ##     ## ")
+	print("##     ## ##    ## ##     ##  ######   ##     ## ##     ## ##     ## ")
 	message=text #input("This will print all possible arrangements(permutations) of the word\nP.S. Heavy RAM user and May crash if lenght of word more than 9 letters.\n\nEnter word:")
 	l=message.split(" ")
 	perms = sorted(set(["".join(perm) for perm in itertools.permutations(message)]))

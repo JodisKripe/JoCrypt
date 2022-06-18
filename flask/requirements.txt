@@ -1,0 +1,4 @@
+Pillow
+more-itertools
+hashlib
+stegano
