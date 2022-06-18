@@ -47,6 +47,11 @@ Running this project on Android is NOT recommended due to inadequate support for
 ##### mysql
 ##### mysql.connector
 
+# Docker
+Finally the project is moving towards a proper docker image. The First image has been pushed to dockerhub at https://hub.docker.com/repository/docker/jodiskripe/jocrypt.
+To run the project via docker, pull via `docker pull jodiskripe/jocrypt` and deploy via `docker run -p5000:5000 jodiskripe/jocrypt`
+The GUI and functionalities are minimal, but they will be expanded in future updates(this is a slow developing project I know).
+
 
 ### Alternatively, you can use the package installer file
 
@@ -62,6 +67,7 @@ It will only work on windows machines...
 If you want it to work on macintosh/Linux etc., remove the "maximize console" part. (Done in <b>JoCryptL.py</b>)
 
 You will require a password to start the program. So,  in <b>Pass.txt</b>, enter the <em>md5 hashed</em> of your password and enter the actual password that you've set when prompted. Default --> "SecurePassword@!".
+
 
 Here are two websites you can use to generate a md5 hash of your password:
 ##### [md5hashgenerator](https://www.md5hashgenerator.com/)
