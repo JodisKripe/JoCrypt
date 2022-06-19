@@ -69,18 +69,17 @@ def BoxCipher(text):
 	box_rows=[dole[i:i+r] for i in range(0, len(dole), r)]
 
 	print("")
+	encry=''
 
 	for _ in range(0,len(box_rows)):
 		print(box_rows[_])
 
 
 	for i in range(0, c):
-		print(message[i : l : r], end = " ")
-
-
-
-	bye=input()
-
+		encry += message[i : l : r]
+		encry+= " "
+	
+	return encry
 ##################################################################################################################################################################
 def BoxCipherDecryption(text):
 	message=text #input("Please enter message to be Decrypted:")
@@ -518,6 +517,8 @@ def JoCrypt():
 '''
 #########################################################################################################################################################################
 #Start()
-if(__name__=="__main__"):
-	JoCrypt()
+print(BoxCipher('Alakazam!'))
 
+'''if(__name__=="__main__"):
+	JoCrypt()
+'''

@@ -45,9 +45,9 @@ def maximize_console(lines=None):
         user32.ShowWindow(hWnd, SW_MAXIMIZE)
 '''
 ##############################################################################################################################################################
-def BoxCipher():
+def BoxCipher(text):
 	import math
-	message = input("~$-").strip()
+	message = text # input("~$-").strip()
 	message = message.replace(" ", "")
 	l = len(message)
 	sl = math.sqrt(l)
@@ -69,18 +69,17 @@ def BoxCipher():
 	box_rows=[dole[i:i+r] for i in range(0, len(dole), r)]
 
 	print("")
+	encry=''
 
 	for _ in range(0,len(box_rows)):
 		print(box_rows[_])
 
 
 	for i in range(0, c):
-		print(message[i : l : r], end = " ")
-
-
-
-	bye=input()
-
+		encry += message[i : l : r]
+		encry+= " "
+	
+	return encry
 ##################################################################################################################################################################
 def BoxCipherDecryption(text):
 	message=text #input("Please enter message to be Decrypted:")
@@ -118,6 +117,7 @@ def BoxCipherDecryption(text):
 ##################################################################################################################################################################
 
 def Substitution(text):
+	#mess=str(input("Enter the message to be substituted by a Set Key\n~$-"))
 	mess=text
 	mess=mess.lower()
 
@@ -186,7 +186,7 @@ def CaesarEncrypt(text,key):
 
 
 ##################################################################################################################################################################
-def encryptRailFence(text,key):                                                                              
+def encryptRailFence(text,key): 
 	#text=input("Input Text to be encrypted:")
 	#key=int(input("Enter Key:"))
 	#text=text
@@ -302,13 +302,6 @@ def ReverseSubstitution(text):
 		#iyat=input()
 ################################################################################################################################################################3
 def Anagram(text):
-	print("   ###    ##    ##    ###     ######   ########     ###    ##     ## ")
-	print("  ## ##   ###   ##   ## ##   ##    ##  ##     ##   ## ##   ###   ### ")
-	print(" ##   ##  ####  ##  ##   ##  ##        ##     ##  ##   ##  #### #### ")
-	print("##     ## ## ## ## ##     ## ##   #### ########  ##     ## ## ### ## ")
-	print("######### ##  #### ######### ##    ##  ##   ##   ######### ##     ## ")
-	print("##     ## ##   ### ##     ## ##    ##  ##    ##  ##     ## ##     ## ")
-	print("##     ## ##    ## ##     ##  ######   ##     ## ##     ## ##     ## ")
 	message=text #input("This will print all possible arrangements(permutations) of the word\nP.S. Heavy RAM user and May crash if lenght of word more than 9 letters.\n\nEnter word:")
 	l=message.split(" ")
 	perms = sorted(set(["".join(perm) for perm in itertools.permutations(message)]))
@@ -524,6 +517,8 @@ def JoCrypt():
 '''
 #########################################################################################################################################################################
 #Start()
-if(__name__=="__main__"):
-	JoCrypt()
+print(BoxCipher('Alakazam!'))
 
+'''if(__name__=="__main__"):
+	JoCrypt()
+'''

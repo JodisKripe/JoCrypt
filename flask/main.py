@@ -58,7 +58,13 @@ def ReverseString():
   if(request.method=='POST'):
     text=request.form['text']
     return JoCryptL.ReverseString(text)
-  
+
+@app.route("/box",methods=['POST','GET'])
+def BoxCipher():
+  if(request.method=='POST'):
+    text=request.form['text']
+    return JoCryptL.BoxCipher(text)
+
 @app.route("/boxdecry",methods=['POST','GET'])
 def BoxCipherDecryption():
   if(request.method=='POST'):
@@ -66,4 +72,4 @@ def BoxCipherDecryption():
     return JoCryptL.BoxCipherDecryption(text)
 
 if __name__ == "__main__":
-  app.run(port=5000)
+  app.run(host='0.0.0.0')
