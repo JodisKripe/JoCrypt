@@ -2,3 +2,15 @@ Pillow
 more-itertools
 hashlib
 stegano
+os
+msvcrt
+subprocess
+ctypes
+PIL
+itertools
+hashlib
+stegano
+math
+pandas
+mysql
+mysql.connector
